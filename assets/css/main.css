@@ -59,6 +59,9 @@ body{
     color: var(--text-primary-color);
     background-color: var(--primary-background-color);
     letter-spacing: 1px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a{
@@ -102,6 +105,13 @@ input, button{
 
 i{
     font-size: var(--font-size-md);
+}
+
+
+footer{
+    margin-top: auto;
+    margin-left: 3rem;
+    font-size: var(--font-size-xsm);
 }
 
 
