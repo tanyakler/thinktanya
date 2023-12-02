@@ -552,6 +552,10 @@ footer{
     flex: 50%;
 }
 
+.gallery-one-col{
+    flex: 100%;
+}
+
 .col-1 {
     padding-right: 1rem;
 }
