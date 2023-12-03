@@ -11,6 +11,7 @@
     --text-hover-color: #1B17DB;
     --font-family: 'Neue Haas Grotesk Display Pro', sans-serif;                                       
     /* --font-family: 'Poppins', sans-serif; */
+    --font-size-xxsm: 1.2rem;
     --font-size-xsm: 1.6rem;
     --font-size-blog: 2rem;
     --font-size-sm: 2.4rem;
@@ -110,7 +111,9 @@ i{
 
 footer{
     margin-top: auto;
-    margin-left: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
     font-size: var(--font-size-xsm);
 }
 
@@ -694,13 +697,6 @@ footer{
 /* Newsletter */
 
 /* Footer */
-.footer{
-    background-color: var(--text-primary-color);
-}
-
-.footer-container{
-    gap: var(--gap);
-}
 
 /* Scrollbar styles */
 
