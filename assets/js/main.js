@@ -24,8 +24,9 @@ menuToggleIcon.addEventListener('click', toggleMenu);
 // const conceptImageHovers = selectElement()
 (function() {
     var images = {
-   "1": "assets/images/concepts/hygthMV/hygtgHeader.JPG",
-   "2": "assets/images/tiffanyHoliday.jpeg"
+   "1": "assets/images/concepts/gutsadvent/header.png",
+   "2": "assets/images/concepts/hygthMV/hygtgHeader.JPG",
+   "3": "assets/images/tiffanyHoliday.jpeg"
 };
     var conceptbackground = document.getElementById('conceptbackground');
     var arr = document.getElementsByClassName('concept-list');
