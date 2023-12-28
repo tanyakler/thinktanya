@@ -558,8 +558,19 @@ footer{
     flex: 100%;
 }
 
+.gallery-three-col{
+    flex: 33%;
+}
+
 .col-1 {
     padding-right: 1rem;
+}
+
+.col-l-squares {
+    padding-right: 0.5rem;
+}
+.col-r-squares {
+    padding-left: 0.5rem;
 }
  
 .img-img {
@@ -616,7 +627,7 @@ footer{
 
 .concept-body{
     width: 60%;
-    margin: 7rem auto 1rem;
+    margin: 4rem auto 4rem;
     font-size: var(--font-size-blog); 
     line-height: 3rem;
     text-align: left;
@@ -640,6 +651,10 @@ footer{
     margin: 5rem auto 5rem;
     width: 50%;
     padding: 1rem;
+}
+
+.concept-img-top{
+    margin-top: 5rem;
 }
 
 .song-lyric{
