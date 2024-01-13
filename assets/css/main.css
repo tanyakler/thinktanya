@@ -562,6 +562,10 @@ footer{
     flex: 33%;
 }
 
+.gallery-four-col{
+    flex: 25%;
+}
+
 .col-1 {
     padding-right: 1rem;
 }
@@ -673,6 +677,25 @@ footer{
     font-weight: var(--font-weight-med);
     font-style: italic;
 }
+
+/* scrolling mobile wireframes*/
+
+
+.scrolling-wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: #d1d1d1;
+    padding: 1rem;
+  
+}
+
+.card {
+      display: inline-block;
+      width: 32rem;
+      padding: 0.5rem;
+}
+
 
 
 /* header image with text on top (but not best for longer titles)
