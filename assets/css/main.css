@@ -581,6 +581,11 @@ footer{
     margin-bottom: 1rem;
     vertical-align: middle;
 }
+.img-middle-img {
+    margin-bottom: 1rem;
+    vertical-align: middle;
+    width: 60%;
+}
 
 .gallery-img{
     position: relative;
@@ -695,6 +700,13 @@ footer{
       width: 32rem;
       padding: 0.5rem;
 }
+
+.mobile-prototype-image{
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 

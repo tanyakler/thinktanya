@@ -28,7 +28,9 @@ menuToggleIcon.addEventListener('click', toggleMenu);
     "2": "assets/images/concepts/hygthMV/hygtgHeader.JPG",
     "3": "assets/images/concepts/gutsadvent/header.png",
     "4": "assets/images/concepts/sclevain/levainHeader.png",
-    "5": "assets/images/concepts/gossamer/gossamerHeader.png"
+    "5": "assets/images/concepts/gossamer/gossamerHeader.png",
+    "6": "assets/images/concepts/honeyplum/honeyplumHeader.png"
+
 };
     var conceptbackground = document.getElementById('conceptbackground');
     var arr = document.getElementsByClassName('concept-list');
@@ -42,6 +44,60 @@ menuToggleIcon.addEventListener('click', toggleMenu);
         }
     }
 })();
+
+
+// honeyplum concept
+// click on image to change it
+
+//desktop
+    var honeyplumDesktop = document.getElementById('honeyplumDesktop');
+    var honeyplumDesktopLabel = document.getElementById('honeyplumDesktopLabel');
+    honeyplumDesktop.addEventListener("click", function() {
+        if (honeyplumDesktop.src.endsWith("olddesktop.png")) {
+            honeyplumDesktop.src = "./assets/images/concepts/honeyplum/desktop1.png";
+            honeyplumDesktopLabel.textContent = "HOMEPAGE REDESIGN 1";
+        } else if (honeyplumDesktop.src.endsWith("desktop1.png")) {
+            honeyplumDesktop.src = "./assets/images/concepts/honeyplum/desktoppopup.png";
+            honeyplumDesktopLabel.textContent = "HOMEPAGE REDESIGN POP UP";
+        } else if (honeyplumDesktop.src.endsWith("desktoppopup.png")) {
+            honeyplumDesktop.src = "./assets/images/concepts/honeyplum/desktop2.png";
+            honeyplumDesktopLabel.textContent = "HOMEPAGE REDESIGN 2";
+        } else if (honeyplumDesktop.src.endsWith("desktop2.png")) {
+            honeyplumDesktop.src = "./assets/images/concepts/honeyplum/desktop3.png";
+            honeyplumDesktopLabel.textContent = "HOMEPAGE REDESIGN 3";
+        }else {
+            honeyplumDesktop.src = "./assets/images/concepts/honeyplum/olddesktop.png";
+            honeyplumDesktopLabel.textContent = "ORIGINAL";
+
+        }
+      });
+
+//mobile
+    var honeyplumMobile = document.getElementById('honeyplumMobile');
+    var honeyplumMobile1 = document.getElementById('honeyplumMobile1');
+    var honeyplumMobile2 = document.getElementById('honeyplumMobile2');
+    var honeyplumMobile3 = document.getElementById('honeyplumMobile3');
+    var honeyplumMobileLabel = document.getElementById('honeyplumMobileLabel');
+    honeyplumMobile.addEventListener("click", function() {
+        if (honeyplumMobile1.src.endsWith("mobileOLD.png")) {
+            honeyplumMobile1.src = "./assets/images/concepts/honeyplum/mobile1.png";
+            honeyplumMobile2.src = "./assets/images/concepts/honeyplum/mobile2.png";
+            honeyplumMobile3.src = "./assets/images/concepts/honeyplum/mobile3.png";
+            honeyplumMobileLabel.textContent = "HOMEPAGE REDESIGNS";
+        } else if (honeyplumMobile1.src.endsWith("mobile1.png")) {
+            honeyplumMobile1.src = "./assets/images/concepts/honeyplum/mobilecollections.png";
+            honeyplumMobile2.src = "./assets/images/concepts/honeyplum/mobilepopup.png";
+            honeyplumMobile3.src = "./assets/images/concepts/honeyplum/mobilenew.png";
+            honeyplumMobileLabel.textContent = "HOMEPAGE COLLECTIONS, POP UP, WHAT'S NEW";
+        } else {
+            honeyplumMobile1.src = "./assets/images/concepts/honeyplum/mobileOLD.png";
+            honeyplumMobile2.src = "./assets/images/concepts/honeyplum/mobileOLD2.png";
+            honeyplumMobile3.src = "./assets/images/concepts/honeyplum/mobileOLD3.png";
+            honeyplumMobileLabel.textContent = "ORIGINAL";
+
+        }
+      });
+
 // Swiper
 
 const swiper = new Swiper('.swiper', {
