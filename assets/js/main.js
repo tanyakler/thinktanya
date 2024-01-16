@@ -88,7 +88,7 @@ menuToggleIcon.addEventListener('click', toggleMenu);
             honeyplumMobile1.src = "./assets/images/concepts/honeyplum/mobilecollections.png";
             honeyplumMobile2.src = "./assets/images/concepts/honeyplum/mobilepopup.png";
             honeyplumMobile3.src = "./assets/images/concepts/honeyplum/mobilenew.png";
-            honeyplumMobileLabel.textContent = "HOMEPAGE COLLECTIONS, POP UP, WHAT'S NEW";
+            honeyplumMobileLabel.textContent = "COLLECTIONS, POP UP, WHAT'S NEW REDESIGNS";
         } else {
             honeyplumMobile1.src = "./assets/images/concepts/honeyplum/mobileOLD.png";
             honeyplumMobile2.src = "./assets/images/concepts/honeyplum/mobileOLD2.png";
