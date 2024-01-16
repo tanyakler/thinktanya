@@ -701,13 +701,13 @@ footer{
       padding: 0.5rem;
 }
 
-.mobile-prototype-image{
-    width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
+#honeyplumMobileLabel {
+    font-size: var(--font-size-xsm);
 }
 
-
+#honeyplumDesktopLabel {
+    font-size: var(--font-size-xsm);
+}
 
 
 /* header image with text on top (but not best for longer titles)
@@ -800,6 +800,15 @@ footer{
         text-align: right;
         font-size: var(--font-size-lg);
     }
+
+    #honeyplumMobileLabel {
+        font-size: var(--font-size-sm);
+    }
+    
+    #honeyplumDesktopLabel {
+        font-size: var(--font-size-sm);
+    }
+    
 }
 
 @media screen and (min-width: 700px){
