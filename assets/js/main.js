@@ -2,7 +2,7 @@
 const selectElement = selector => {
     const elem = document.querySelector(selector)
     if(elem) return elem;
-    throw new Error(`Soemthing went wrong, make sure that ${selector} 
+    throw new Error(`Something went wrong, make sure that ${selector} 
     exists or is typed orrectly`);
 };
 
@@ -34,6 +34,7 @@ menuToggleIcon.addEventListener('click', toggleMenu);
 };
     var conceptbackground = document.getElementById('conceptbackground');
     var arr = document.getElementsByClassName('concept-list');
+    
     for(var i=0; i<arr.length; i++) {
     	arr[i].onmouseover = function(e) {
             var a = e.target;
@@ -43,6 +44,7 @@ menuToggleIcon.addEventListener('click', toggleMenu);
             conceptbackground.setAttribute('style', style);
         }
     }
+    
 })();
 
 
