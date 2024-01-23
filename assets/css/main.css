@@ -572,6 +572,19 @@ footer{
     padding-right: 1rem;
 }
 
+.col-three1 {
+    padding-right: 0.5rem;
+}
+
+.col-three2 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.col-three3 {
+    padding-left: 0.5rem;
+}
+
 .col-l-squares {
     padding-right: 0.5rem;
 }
