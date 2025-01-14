@@ -621,7 +621,26 @@ footer{
   opacity: 0;
 }
 
+.gallery-img-caption-dark {
+  position: absolute;
+  align-self: flex-end;
+  padding-left: 1.2rem;
+  padding-bottom: 2rem;
+  font-size: var(--font-size-xsm);
+  font-weight: var(--font-weight-lt);
+  font-style: italic;
+  background: transparent;
+  color: #000000;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .gallery-img:hover .gallery-img-caption {
+    visibility: visible;
+    opacity: 1;
+}
+
+.gallery-img:hover .gallery-img-caption-dark {
     visibility: visible;
     opacity: 1;
 }
