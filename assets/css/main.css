@@ -162,6 +162,14 @@ footer{
     z-index: 999;
 }
 
+.header-index{
+    position: absolute;
+    top: 4.8rem;
+    left: 1rem;
+    width: 100%;
+    z-index: 999;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -645,7 +653,12 @@ footer{
     opacity: 1;
 }
 
-
+.home-page-image {
+    object-fit: cover;
+    align-self: center;
+    height: 100%;
+    
+}
 
 
 
