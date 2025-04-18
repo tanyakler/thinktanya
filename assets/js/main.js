@@ -137,28 +137,8 @@ menuToggleIcon.addEventListener('click', toggleMenu);
 
 // index page
 var indeximg = document.getElementById('indeximg');
-var width = screen.width;
-//desktop
-if (width>550) {
-    if (indeximg){
-        indeximg.addEventListener("click", function() {
-        if (indeximg.src.endsWith("desktop-index.png")) {
-            indeximg.src = "./assets/images/desktop-index2.png";
-        } else if (indeximg.src.endsWith("desktop-index2.png")) {
-            indeximg.src = "./assets/images/desktop-index3.png";
-        } else if (indeximg.src.endsWith("desktop-index3.png")) {
-            indeximg.src = "./assets/images/desktop-index4.png";
-        } else if (indeximg.src.endsWith("desktop-index4.png")) {
-            indeximg.src = "./assets/images/desktop-index5.png";
-        }else if(indeximg.src.endsWith("desktop-index5.png")) {
-            indeximg.src = "./assets/images/desktop-index.png";
-        } else{
-
-        }
-      })}
-} else {
-    if (indeximg){
-        indeximg.addEventListener("click", function() {
+if (indeximg){
+    indeximg.addEventListener("click", function() {
         if (indeximg.src.endsWith("mobile-index.png")) {
             indeximg.src = "./assets/images/mobile-index2.png";
         } else if (indeximg.src.endsWith("mobile-index2.png")) {
@@ -167,10 +147,20 @@ if (width>550) {
             indeximg.src = "./assets/images/mobile-index4.png";
         } else if (indeximg.src.endsWith("mobile-index4.png")) {
             indeximg.src = "./assets/images/mobile-index5.png";
-        }else {
+        } else if (indeximg.src.endsWith("mobile-index5.png")) {
             indeximg.src = "./assets/images/mobile-index.png";
+        } else if (indeximg.src.endsWith("desktop-index.png")) {
+            indeximg.src = "./assets/images/desktop-index2.png";
+        } else if (indeximg.src.endsWith("desktop-index2.png")) {
+            indeximg.src = "./assets/images/desktop-index3.png";
+        } else if (indeximg.src.endsWith("desktop-index3.png")) {
+            indeximg.src = "./assets/images/desktop-index4.png";
+        } else if (indeximg.src.endsWith("desktop-index4.png")) {
+            indeximg.src = "./assets/images/desktop-index5.png";
+        } else {
+            indeximg.src = "./assets/images/desktop-index.png";
         }
-      })}
+    })
 };
 
 // Swiper
