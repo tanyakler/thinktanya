@@ -654,10 +654,22 @@ footer{
 }
 
 .home-page-image {
+    height: 100%; 
     object-fit: cover;
-    align-self: center;
-    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
+}
+
+
+
+.homepage-image {
+
+  /* Full height */
+  height: 100%; 
+  
+
 }
 
 
