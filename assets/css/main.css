@@ -882,11 +882,6 @@ footer{
         font-size: var(--font-size-sm);
     }
 
-    .homepage-container h1{
-        font-size: 8rem;
-        font-weight: var(--font-weight-bold);
-        letter-spacing: -0.3rem;
-    }
     
 }
 
@@ -953,6 +948,13 @@ footer{
     .gallery-row{
         width: 65%;
     }
+
+    .homepage-container h1{
+        font-size: 8rem;
+        font-weight: var(--font-weight-bold);
+        letter-spacing: -0.3rem;
+    }
+
 }
 
 @media screen and (min-width: 900px){
