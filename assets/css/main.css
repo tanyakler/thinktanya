@@ -672,10 +672,24 @@ footer{
 
 }
 
+.homepage-container{
+    width: 100%;
+    height: 100vh;
+    color: var(--blog-pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.homepage-container h1{
+    font-size: 8rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.3rem;
+}
 
-
-
+.typed-cursor {
+    display: none;
+}
 /* SINGLE CONCEPT PAGE */
 
 .concept-header{
