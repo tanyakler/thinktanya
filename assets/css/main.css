@@ -682,9 +682,9 @@ footer{
 }
 
 .homepage-container h1{
-    font-size: 8rem;
+    font-size: var(--font-size-xl);
     font-weight: var(--font-weight-bold);
-    letter-spacing: -0.3rem;
+    letter-spacing: -0.2rem;
 }
 
 .typed-cursor {
@@ -880,6 +880,12 @@ footer{
     
     #honeyplumDesktopLabel {
         font-size: var(--font-size-sm);
+    }
+
+    .homepage-container h1{
+        font-size: 8rem;
+        font-weight: var(--font-weight-bold);
+        letter-spacing: -0.3rem;
     }
     
 }
