@@ -273,15 +273,34 @@ footer{
 }
 
 .billiard-index-image{
-    width: 30rem;
+    width: 20rem;
     margin: auto;
     margin-bottom: 5rem;
     padding-top:15rem;
+    animation: shake 2s;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
+  .apply-shake {
+    animation: shake 0.5s;
 }
 
 .wand-type{
-    margin-left: 4rem;
+    margin-left: 2.5rem;
+    font-size: var(--font-size-xsm);
+
 }
 
 .wand-type:hover{
@@ -294,8 +313,8 @@ footer{
 }
 
 .wand-image{
-    width: 5rem;
-    margin-left: 8rem;
+    width: 3rem;
+    margin-left: 5rem;
 }
 
 .index-greeting{
@@ -892,6 +911,7 @@ footer{
         height: 50rem; 
     }
 
+
 }
 
 @media screen and (min-width: 650px){
@@ -910,6 +930,24 @@ footer{
     
     #honeyplumDesktopLabel {
         font-size: var(--font-size-sm);
+    }
+
+    
+    .billiard-index-image{
+        width: 30rem;
+        margin: auto;
+        margin-bottom: 5rem;
+        padding-top:15rem;
+
+    }
+    .wand-image{
+        width: 4rem;
+        margin-left: 8rem;
+    }
+
+    .wand-type{
+        font-size: var(--font-size-sm);
+        margin-left: 4rem;
     }
 
     

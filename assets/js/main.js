@@ -177,6 +177,7 @@ let billiards2 = ["./assets/images/index/magic/magic8-yes1.png",
 "./assets/images/index/magic/magic8-maybe.png", "./assets/images/index/magic/magic8-idk.png"];
 
 let isitQ = false;
+let isitTT = false;
 
 /*
 
@@ -218,13 +219,22 @@ function getRandomInt(min, max) {
 
 if (wand){
     wand.addEventListener("click", function() {
-        if (billiard.src.endsWith("pink.png") || isitQ) {
+        if (billiard.src.endsWith("pink.png") || billiard.src.endsWith("blue.png") ||
+        billiard.src.endsWith("purple.png") || billiard.src.endsWith("lime.png")  ||
+        billiard.src.endsWith("orange.png") || billiard.src.endsWith("red.png") || isitQ) {
             billiard.src = magicQ;
+            billiard.classList.remove("apply-shake");
             isitQ = false;
+            isitTT = false;
+        } else if (isitTT) {
+            randomIndex = getRandomInt(0, 6);
+            billiard.src = billiards[randomIndex];
+            isitTT = false;
         } else {
             randomIndex = getRandomInt(0, 11);
+            billiard.classList.add("apply-shake");
             billiard.src = billiards2[randomIndex];
-            isitQ = true;
+            isitTT = true;
         }
     }
     )};
