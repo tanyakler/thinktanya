@@ -163,6 +163,73 @@ if (indeximg){
     })
 };
 
+let billiards = ["./assets/images/index/billiard-pink.png", 
+"./assets/images/index/billiard-blue.png", "./assets/images/index/billiard-lime.png",
+"./assets/images/index/billiard-red.png", "./assets/images/index/billiard-purple.png",
+"./assets/images/index/billiard-orange.png"];
+
+let magicQ = "./assets/images/index/magic/magic8-q.png";
+let billiards2 = ["./assets/images/index/magic/magic8-yes1.png", 
+"./assets/images/index/magic/magic8-yes2.png", "./assets/images/index/magic/magic8-idk.png",
+"./assets/images/index/magic/magic8-yes3.png", "./assets/images/index/magic/magic8-no1.png", 
+"./assets/images/index/magic/magic8-idk.png", "./assets/images/index/magic/magic8-idk.png", 
+"./assets/images/index/magic/magic8-no2.png", "./assets/images/index/magic/magic8-no3.png", 
+"./assets/images/index/magic/magic8-maybe.png", "./assets/images/index/magic/magic8-idk.png"];
+
+let isitQ = false;
+
+/*
+
+
+let index = 0;
+const imgElement = document.querySelector('#mainBilliard');
+function change() {
+   imgElement.src = billiards[index];
+   index > 4 ? index = 0 : index++;
+}
+
+ window.onload = function () {
+     setInterval(change, 1000);
+};
+
+var billiard = document.getElementById('mainbilliard');
+if (billiard){
+    let intervalId;
+    billiard.addEventListener("mouseover", function() {
+        window.onload = function () {
+                intervalId ??= setInterval(change, 500);
+    }})
+    billiard.addEventListener("mouseout", function() {
+        
+            clearInterval(intervalId);
+    })
+};
+*/
+
+var wand = document.getElementById('wand');
+var billiard = document.getElementById('mainBilliard');
+let randomIndex;
+  
+function getRandomInt(min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+  };
+
+if (wand){
+    wand.addEventListener("click", function() {
+        if (billiard.src.endsWith("pink.png") || isitQ) {
+            billiard.src = magicQ;
+            isitQ = false;
+        } else {
+            randomIndex = getRandomInt(0, 11);
+            billiard.src = billiards2[randomIndex];
+            isitQ = true;
+        }
+    }
+    )};
+
+
 // Swiper
 
 const swiper = new Swiper('.swiper', {

@@ -272,6 +272,32 @@ footer{
     /* background-image: url('./assets/images/indexImg.JPG'); i'll fix hover later*/
 }
 
+.billiard-index-image{
+    width: 30rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding-top:15rem;
+
+}
+
+.wand-type{
+    margin-left: 4rem;
+}
+
+.wand-type:hover{
+    color: var(--text-hover-color);
+}
+
+.wand-container{
+    flex-direction: column;
+    align-self: center;
+}
+
+.wand-image{
+    width: 5rem;
+    margin-left: 8rem;
+}
+
 .index-greeting{
     width: 40rem;
     float: right;
@@ -279,7 +305,7 @@ footer{
     margin-right: 5%;
     text-align: right;
     font-size: var(--font-size-lg);
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 
