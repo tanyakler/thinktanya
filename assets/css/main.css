@@ -46,7 +46,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: var(--letter-spacing-primary);
+    letter-spacing: var(--letter-spacing-zero);
 
 }
 
@@ -566,6 +566,7 @@ footer{
     font-size: var(--font-size-blog); 
     line-height: 3rem;
     text-align: left;
+    letter-spacing: var(--letter-spacing-zero);
 
 }
 
