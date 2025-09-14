@@ -815,10 +815,28 @@ footer{
 }
 
 .card {
-      display: inline-block;
-      width: 32rem;
-      padding: 0.5rem;
+    display: inline-block;
+    width: 32rem;
+    padding: 0.5rem;
 }
+
+.scrolling-wrapper-sotu {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: #ffffff;
+    padding: 0rem;
+  
+}
+
+.sotu-card{
+    display: inline-block;
+    width: 32rem; 
+    padding: 0rem;
+
+}
+
+
 
 #honeyplumMobileLabel {
     font-size: var(--font-size-xsm);
