@@ -24,7 +24,7 @@
     --font-weight-rom: 400;
     --font-weight-med: 500;
     --font-weight-bold: 600;
-    --letter-spacing-primary: -2%;
+    --letter-spacing-primary: 2%;
     --letter-spacing-zero: 0%;
     --letter-spacing-two: 2%;
     --gap: 2rem;
@@ -46,7 +46,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    letter-spacing: var(--letter-spacing-zero);
+    letter-spacing: var(--letter-spacing-primary);
 
 }
 
@@ -60,7 +60,7 @@ body{
     font-size: var(--font-size-sm);
     color: var(--text-primary-color);
     background-color: var(--primary-background-color);
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing-primary);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -566,7 +566,7 @@ footer{
     font-size: var(--font-size-blog); 
     line-height: 3rem;
     text-align: left;
-    letter-spacing: var(--letter-spacing-zero);
+    letter-spacing: var(--letter-spacing-primary);
 
 }
 
